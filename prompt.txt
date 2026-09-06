@@ -1,0 +1,23 @@
+Let's begin with the idea, follow each of the steps in detail, so that it's as accurate as possible
+- generate a venv and always use that for installing the dependencies
+- add a requirements.txt file to the repository
+- the following is the tech stack, so initiate the folders accordingly: 
+    - frontend: react
+    - backend: fastAPI
+    - deployment: netlify
+    - database: firebase
+    - AI: anthropic
+- make all the necessary files and folders for the project, but keep it minimal and simple, only which is necessary, dont overdo and dont complicate
+- keep these original prompt and maintain a simple progress.txt file for the steps that would have carried out and the decisions made
+- I want the UI to be very top notch, interactive, lag-free and user-friendly, so you can even change the technologies if you want or use your required libraries accordingly
+- now this is the details of the project, let's start with the basic structure of the project:
+    - I am trying to come up with a simple screen UI where drawings can be made, just the basic paint window where there would be interface for choosing colors, thickness of the brush, eraser and thus the bare minimum required tools
+    - then the person will be able to draw here, and then we will use the anthropic API to generate the AI response based on the drawing, that is come up with a 3d design of the drawing. The field we are targeting is basic 3d design of the house drawing
+
+Phase2:
+now let's focus on the agentic workflow of the project - keep it as simplistic as possible perhaps use given basic libraries and tools in python, I want this to be a multi-agent mcp server, where each of this agents would carry out their definitive tasks perhaps using some tools which is defined, and also maintain the context accordingly, so for this phase we would be working on the following:
+    - make a root agent that would be the main agent of the project, and it will be using the rest of the agents to perform the tasks. 
+    - So the already existing workflow would be the GeneratorAgent - one that would be taking the drawing as input and generating the 3d design of the house based on the drawing - this already exists in the current flow I want it to be an agentic flow
+    - next make a EstimatorAgent who would be responsible for estimating the cost of building the house based on the 3d design. use the image to generate the total stuffs required like the amounts of paint, bricks and all materials required in details
+- the estimated list of the products that would be required, where is that present in the frontend and I want that to be displayed to the user as well, when a button is clicked by the user. So basically the UI should have the button which would then be clicked to generate the estimate of the raw materials required for that image, and displayed to the user, as well as keep the previous generated image
+- give the updates in the readme file making all the necessary changes as well the gitginore, requirements but try to keep the main workflow in the backend/main.py or however you deem it to be good. Also keep the detailed file structure in the readme
